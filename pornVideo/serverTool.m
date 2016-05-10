@@ -15,7 +15,7 @@
 
 + (void)getPornListData:(void(^)(id responseData))successBlock failBlock:(void(^)(NSError *error))failBlock{
     
-    NSString *urlString = [NSString stringWithFormat:@"http://www.999re7.com"];  //拼接请求网址
+    NSString *urlString = [NSString stringWithFormat:@"!!!!"];  //拼接请求网址
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; //中文转义
     NSURL *url = [NSURL URLWithString:urlString];  //得到URL
     
@@ -49,7 +49,7 @@
     //    NSLog(@"%@",html);
     //将需要取出的用(.*?)代替. 大空格换行等用.*?代替,表示忽略.
     
-    //<a href="http://www.999re7.com/videos/20795/tokyo-hot-n0410/" class="kt_imgrc" title="Tokyo Hot n0410">
+
     NSString *pattern = @"<div class=\"thumb-content\">.*?<a href=\"(.*?)\" class=\"kt_imgrc\" title=\"(.*?)\">";
     
     //实例化正则表达式，需要指定两个选项
@@ -133,7 +133,7 @@
     //    NSLog(@"%@",html);
     //将需要取出的用(.*?)代替. 大空格换行等用.*?代替,表示忽略.
     
-    //video_url: 'http://www.999re7.com/get_file/3/d963c7977ca44d8f1fd3e71d334ee7d3/40000/40871/40871.mp4/',
+    
     NSString *pattern = @"video_url: '(.*?)',";
     
     //实例化正则表达式，需要指定两个选项

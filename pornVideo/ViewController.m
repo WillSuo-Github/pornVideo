@@ -26,7 +26,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    //http://www.999re7.com/videos/40872/483f91c600f8416efbafb9f5ded100d7/
+    
     
     [self setUpSubView];
     [self getData];
